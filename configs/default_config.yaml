@@ -5,7 +5,7 @@ experiment_name: "baseline"
 random_seed: 42
 
 data:
-  raw_path: "data/raw/"
+  raw_path: "dataset/"
   interim_path: "data/interim/"
   processed_path: "data/processed/"
 
