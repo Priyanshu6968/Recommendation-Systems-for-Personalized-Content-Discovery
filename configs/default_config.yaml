@@ -1,0 +1,19 @@
+# Default Configuration
+
+project_name: "netflix_prize"
+experiment_name: "baseline"
+random_seed: 42
+
+data:
+  raw_path: "data/raw/"
+  interim_path: "data/interim/"
+  processed_path: "data/processed/"
+
+training:
+  batch_size: 1024
+  epochs: 20
+  learning_rate: 0.001
+
+wandb:
+  project: "netflix-recsys"
+  entity: "my-team"

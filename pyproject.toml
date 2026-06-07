@@ -1,0 +1,41 @@
+[project]
+name = "netflix_prize_recsys"
+version = "0.1.0"
+description = "A competition-winning recommendation system using the Netflix Prize Dataset"
+authors = [
+    {name = "Principal ML Engineer", email = "engineer@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "polars",
+    "scikit-learn",
+    "torch",
+    "pytorch-lightning",
+    "implicit",
+    "scikit-surprise",
+    "wandb",
+    "streamlit",
+    "pyarrow",
+    "fastparquet"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "black",
+    "pre-commit",
+    "jupyter",
+    "matplotlib",
+    "seaborn"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
